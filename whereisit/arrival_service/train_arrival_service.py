@@ -118,7 +118,7 @@ class TrainArrivalService(VehicleArrivalService):
 
     def _remove_obsolete_train_arrivals(
         self, train_locations: Dict[int, TrainArrivalFromAPI]
-    ):
+    ) -> None:
         entries_to_delete = []
         for train_id in self.relative_train_locations:
             if train_id not in train_locations:
@@ -126,11 +126,12 @@ class TrainArrivalService(VehicleArrivalService):
         for entry in entries_to_delete:
             self.relative_train_locations.pop(entry)
 
-    def get_arrivals(self):
+    def get_arrivals(self) -> Dict[int, RelativeTrainArrival]:
         train_locations = self._get_train_arrivals_from_api()
         self._update_all_relative_train_arrivals(train_locations)
         self._remove_obsolete_train_arrivals(train_locations)
 
+        return self.relative_train_locations
         # WIP for debugging purposes
         for key, value in self.relative_train_locations.items():
             print(f"{key}:{value.percent_traveled_to_station}")
