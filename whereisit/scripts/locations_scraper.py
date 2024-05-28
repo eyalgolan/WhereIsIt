@@ -1,9 +1,13 @@
+# This file should hold the logic for getting al the location and station info,
+# in order to locate the trains on the map.
+
 from decimal import Decimal
 from typing import List
 
 import requests
 from pydantic import BaseModel
-from src.constants import TubeLine
+
+from whereisit.constants import TubeLine
 
 
 class Location(BaseModel):

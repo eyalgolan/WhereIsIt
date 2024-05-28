@@ -1,5 +1,4 @@
-from dataclasses import dataclass
-from decimal import Decimal
+from decimal import ROUND_HALF_DOWN, Decimal
 from typing import Dict, Optional
 
 import requests
@@ -38,9 +37,11 @@ class RelativeTrainArrival(BaseModel):
     percent_traveled_to_station: Decimal
 
 
-@dataclass
 class TrainArrivalService(VehicleArrivalService):
     relative_train_locations: Dict[int, RelativeTrainArrival]
+
+    def __init__(self):
+        self.relative_train_locations = {}
 
     def _get_train_arrivals_from_api(self) -> Dict[int, TrainArrivalFromAPI]:
         train_locations: Dict[int, TrainArrivalFromAPI] = {}
@@ -71,20 +72,21 @@ class TrainArrivalService(VehicleArrivalService):
         self, train_locations: Dict[int, TrainArrivalFromAPI]
     ) -> None:
         for train_location_id, train_location in train_locations.items():
-            # As we don't know the distance between stations,
-            # when We "discover" a new item representing a train's trip between stations ,
+            # As we don't know the distance between stations and the trains speed,
+            # when we "discover" a new item representing a train's trip between stations,
             # we set it's total trip time between these stations as the time left.
             # This means that when the program starts,
             # it will take a few minutes to show accurate locations of the trains.
-            # A solution to this can be to write a script that will save the times/distances between # stations, and use that. For now this will do.
+            # A solution to this can be to write a script that will save the times/distances between stations, and use that.
+            # For now this will do.
 
             if train_location_id not in self.relative_train_locations:
                 self.relative_train_locations[train_location_id] = RelativeTrainArrival(
                     id=train_location_id,
                     vehicle_id=train_location.vehicle_id,
-                    line=train_location.line,
-                    next_station_natpan_id=train_location.line,
-                    current_location=train_location.last_visited_station_natpan_id,
+                    line=train_location.line.value,
+                    next_station_natpan_id=train_location.next_station_natpan_id,
+                    last_visited_station_natpan_id=train_location.last_visited_station_natpan_id,
                     platform=train_location.platform,
                     direction=train_location.direction,
                     destination=train_location.destination,
@@ -108,12 +110,15 @@ class TrainArrivalService(VehicleArrivalService):
                 total_time_to_next_station = self.relative_train_locations[
                     train_location_id
                 ].time_from_previous_station_to_next_station
-                self.relative_train_locations[
-                    train_location_id
-                ].percent_traveled_to_station = (
+                percent_traveled_to_station = Decimal(
                     100
                     - (train_location.time_to_destination / total_time_to_next_station)
                     * 100
+                )
+                self.relative_train_locations[
+                    train_location_id
+                ].percent_traveled_to_station = percent_traveled_to_station.quantize(
+                    Decimal("0.00"), rounding=ROUND_HALF_DOWN
                 )
 
     def _remove_obsolete_train_arrivals(

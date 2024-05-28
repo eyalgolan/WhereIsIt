@@ -1,8 +1,10 @@
+# This is currently a basic runner for debugging purposes.
+
 from arrival_service.train_arrival_service import TrainArrivalService
 
 
 def main():
-    train_service = TrainArrivalService(relative_train_locations={})
+    train_service = TrainArrivalService()
 
     from time import sleep
 
