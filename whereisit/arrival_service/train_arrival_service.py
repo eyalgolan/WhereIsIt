@@ -14,27 +14,27 @@ class TrainArrivalFromAPI(BaseModel):
     id: int  # Not to be confused with vehicleId from tlf api
     vehicle_id: Optional[int]
     line: TubeLine
+    # natpan = National Public Transport Access Nodes
     next_station_natpan_id: Optional[str]
-    last_visited_station_natpan_id: Optional[
-        str
-    ] = None  # natpan = National Public Transport Access Nodes
+    last_station_natpan_id: Optional[str] = None
     platform: str
     direction: Optional[str]
     destination: Optional[str]
-    time_to_destination: int
+    time_remaining: int
 
 
 class RelativeTrainArrival(BaseModel):
     id: int
     vehicle_id: Optional[int]
     line: TubeLine
+    # natpan = National Public Transport Access Nodes
     next_station_natpan_id: Optional[str]
-    last_visited_station_natpan_id: Optional[str] = None
+    last_station_natpan_id: Optional[str] = None
     platform: str
     direction: Optional[str]
     destination: Optional[str]
-    time_from_previous_station_to_next_station: int
-    percent_traveled_to_station: Decimal
+    travel_time: int
+    percent_traveled: Decimal
 
 
 class TrainArrivalService(VehicleArrivalService):
@@ -59,11 +59,11 @@ class TrainArrivalService(VehicleArrivalService):
                     else None,
                     line=TubeLine(item["lineName"].lower()),
                     next_station_natpan_id=item.get("destinationNaptanId"),
-                    last_visited_station_natpan_id=item.get("naptanId"),
+                    last_station_natpan_id=item.get("naptanId"),
                     platform=item["platformName"],
                     direction=item.get("direction"),
                     destination=item.get("destinationName"),
-                    time_to_destination=item["timeToStation"],
+                    time_remaining=item["timeToStation"],
                 )
                 train_locations[train_location.id] = train_location
         return train_locations
@@ -86,38 +86,32 @@ class TrainArrivalService(VehicleArrivalService):
                     vehicle_id=train_location.vehicle_id,
                     line=train_location.line.value,
                     next_station_natpan_id=train_location.next_station_natpan_id,
-                    last_visited_station_natpan_id=train_location.last_visited_station_natpan_id,
+                    last_station_natpan_id=train_location.last_station_natpan_id,
                     platform=train_location.platform,
                     direction=train_location.direction,
                     destination=train_location.destination,
-                    time_from_previous_station_to_next_station=train_location.time_to_destination,
-                    percent_traveled_to_station=Decimal("0.00"),
+                    travel_time=train_location.time_remaining,
+                    percent_traveled=Decimal("0.00"),
                 )
             else:
                 # handle delays
                 if (
-                    train_location.time_to_destination
-                    > self.relative_train_locations[
-                        train_location_id
-                    ].time_from_previous_station_to_next_station
+                    train_location.time_remaining
+                    > self.relative_train_locations[train_location_id].travel_time
                 ):
                     self.relative_train_locations[
                         train_location_id
-                    ].time_from_previous_station_to_next_station = (
-                        train_location.time_to_destination
-                    )
+                    ].travel_time = train_location.time_remaining
 
-                total_time_to_next_station = self.relative_train_locations[
+                total_time = self.relative_train_locations[
                     train_location_id
-                ].time_from_previous_station_to_next_station
+                ].travel_time
                 percent_traveled_to_station = Decimal(
-                    100
-                    - (train_location.time_to_destination / total_time_to_next_station)
-                    * 100
+                    100 - (train_location.time_remaining / total_time) * 100
                 )
                 self.relative_train_locations[
                     train_location_id
-                ].percent_traveled_to_station = percent_traveled_to_station.quantize(
+                ].percent_traveled = percent_traveled_to_station.quantize(
                     Decimal("0.00"), rounding=ROUND_HALF_DOWN
                 )
 

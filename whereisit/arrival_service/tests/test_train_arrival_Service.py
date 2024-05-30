@@ -39,7 +39,7 @@ def test_get_train_arrivals_from_api(mock_api_response):
     assert train_arrival.platform == "Northbound Fast - Platform 3"
     assert train_arrival.direction == "inbound"
     assert train_arrival.destination == "Uxbridge Underground Station"
-    assert train_arrival.time_to_destination == 145
+    assert train_arrival.time_remaining == 145
 
 
 def test_update_all_relative_train_arrivals_new_train():
@@ -51,11 +51,11 @@ def test_update_all_relative_train_arrivals_new_train():
             vehicle_id=101,
             line=TubeLine("metropolitan"),
             next_station_natpan_id="natpan_id_station_1",
-            last_visited_station_natpan_id="natpan_id_station_0",
+            last_station_natpan_id="natpan_id_station_0",
             platform="Platform 1",
             direction="North",
             destination="Destination 1",
-            time_to_destination=300,
+            time_remaining=300,
         )
     }
 
@@ -69,12 +69,12 @@ def test_update_all_relative_train_arrivals_new_train():
     assert relative_arrival.vehicle_id == 101
     assert relative_arrival.line.value == "metropolitan"
     assert relative_arrival.next_station_natpan_id == "natpan_id_station_1"
-    assert relative_arrival.last_visited_station_natpan_id == "natpan_id_station_0"
+    assert relative_arrival.last_station_natpan_id == "natpan_id_station_0"
     assert relative_arrival.platform == "Platform 1"
     assert relative_arrival.direction == "North"
     assert relative_arrival.destination == "Destination 1"
-    assert relative_arrival.time_from_previous_station_to_next_station == 300
-    assert relative_arrival.percent_traveled_to_station == Decimal("0.00")
+    assert relative_arrival.travel_time == 300
+    assert relative_arrival.percent_traveled == Decimal("0.00")
 
 
 def test_update_all_relative_train_arrivals_existing_train():
@@ -90,8 +90,8 @@ def test_update_all_relative_train_arrivals_existing_train():
             platform="Platform 1",
             direction="North",
             destination="Destination 1",
-            time_from_previous_station_to_next_station=300,
-            percent_traveled_to_station=Decimal("50.00"),
+            travel_time=300,
+            percent_traveled=Decimal("50.00"),
         )
     }
 
@@ -101,11 +101,11 @@ def test_update_all_relative_train_arrivals_existing_train():
             vehicle_id=101,
             line=TubeLine("metropolitan"),
             next_station_natpan_id="station_1",
-            last_visited_station_natpan_id="station_0",
+            last_station_natpan_id="station_0",
             platform="Platform 1",
             direction="North",
             destination="Destination 1",
-            time_to_destination=200,
+            time_remaining=200,
         )
     }
 
@@ -114,8 +114,8 @@ def test_update_all_relative_train_arrivals_existing_train():
 
     # Verify
     relative_arrival = service.relative_train_locations[1]
-    assert relative_arrival.time_from_previous_station_to_next_station == 300
-    assert relative_arrival.percent_traveled_to_station == Decimal("33.33")
+    assert relative_arrival.travel_time == 300
+    assert relative_arrival.percent_traveled == Decimal("33.33")
 
 
 def test_update_all_relative_train_arrivals_delay():
@@ -131,8 +131,8 @@ def test_update_all_relative_train_arrivals_delay():
             platform="Platform 1",
             direction="North",
             destination="Destination 1",
-            time_from_previous_station_to_next_station=300,
-            percent_traveled_to_station=Decimal("50.00"),
+            travel_time=300,
+            percent_traveled=Decimal("50.00"),
         )
     }
 
@@ -142,11 +142,11 @@ def test_update_all_relative_train_arrivals_delay():
             vehicle_id=101,
             line=TubeLine("metropolitan"),
             next_station_natpan_id="station_1",
-            last_visited_station_natpan_id="station_0",
+            last_station_natpan_id="station_0",
             platform="Platform 1",
             direction="North",
             destination="Destination 1",
-            time_to_destination=350,
+            time_remaining=350,
         )
     }
 
@@ -155,5 +155,5 @@ def test_update_all_relative_train_arrivals_delay():
 
     # Verify
     relative_arrival = service.relative_train_locations[1]
-    assert relative_arrival.time_from_previous_station_to_next_station == 350
-    assert relative_arrival.percent_traveled_to_station == Decimal("0.00")
+    assert relative_arrival.travel_time == 350
+    assert relative_arrival.percent_traveled == Decimal("0.00")
