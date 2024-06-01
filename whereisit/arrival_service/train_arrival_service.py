@@ -5,7 +5,7 @@ import requests
 from pydantic import BaseModel
 
 from whereisit.arrival_service.vehicle_arrival_service import VehicleArrivalService
-from whereisit.constants import TubeLine
+from whereisit.shared_models import TubeLine
 
 
 class TrainArrivalFromAPI(BaseModel):

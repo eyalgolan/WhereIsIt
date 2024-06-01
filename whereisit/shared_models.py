@@ -1,4 +1,7 @@
 from enum import Enum
+from typing import List, Union
+
+from pydantic import BaseModel
 
 
 class TubeLine(Enum):
@@ -15,3 +18,17 @@ class TubeLine(Enum):
     PICCADILLY = "piccadilly"
     VICTORIA = "victoria"
     WATERLOO_AND_CITY = "waterloo-city"
+
+
+class Location(BaseModel):
+    lon: float
+    lat: float
+
+
+class Station(Location):
+    natpan_id: str
+    name: str
+
+
+class Route(BaseModel):
+    locations: List[Union[Location, Station]] = []

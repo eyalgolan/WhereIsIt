@@ -3,27 +3,11 @@
 
 import json
 from pathlib import Path
-from typing import Dict, List, Union
+from typing import Dict, List
 
 import requests
-from pydantic import BaseModel
 
-from whereisit.constants import TubeLine
-
-
-class Location(BaseModel):
-    lon: float
-    lat: float
-
-
-class Station(Location):
-    natpan_id: str
-    name: str
-
-
-class Route(BaseModel):
-    locations: List[Union[Location, Station]] = []
-
+from whereisit.shared_models import Location, Route, Station, TubeLine
 
 for line in TubeLine:
     url = f"https://api.tfl.gov.uk/line/{line.value}/route/sequence/all"
