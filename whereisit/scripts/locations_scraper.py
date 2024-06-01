@@ -1,8 +1,9 @@
-# This file should hold the logic for getting al the location and station info,
+# This file holds the logic for getting all the locations and stations info per route per line,
 # in order to locate the trains on the map.
 
 import json
-from typing import Dict, List
+from pathlib import Path
+from typing import Dict, List, Union
 
 import requests
 from pydantic import BaseModel
@@ -19,29 +20,16 @@ class Station(Location):
     natpan_id: str
     name: str
 
-    def to_dict(self) -> Dict:
-        return {
-            "name": self.name,
-            "natpan_id": self.natpan_id,
-            "lon": self.lon,
-            "lat": self.lat,
-        }
 
-
-class Line(BaseModel):
-    locations: List[Location]
+class Route(BaseModel):
+    locations: List[Union[Location, Station]] = []
 
 
 for line in TubeLine:
-    line_stations = []
     url = f"https://api.tfl.gov.uk/line/{line.value}/route/sequence/all"
     response = requests.request("GET", url).json()
 
-    sub_lines = response["lineStrings"]
-
-    # TODO create a object that describes the order of locations in each subline.
-    # The object should also detail for each location if it's a station.
-
+    line_stations: Dict[str, Station] = {}
     try:
         stations = response["stations"]
     except KeyError:
@@ -54,8 +42,22 @@ for line in TubeLine:
             lat=station.get("lat"),
             lon=station.get("lon"),
         )
-        line_stations.append(s.to_dict())
+        line_stations[f"{s.lat}_{s.lon}"] = s
 
-    # TODO save jsons in assets folder
-    with open(f"{line.value}_stations.json", "w") as json_file:
-        json.dump(line_stations, json_file, indent=4)
+    routes: List[Route] = []
+    line_strings = response["lineStrings"]
+    for raw_line_string in line_strings:
+        line_string = json.loads(raw_line_string)[0]
+        locations = []
+        for segment in line_string:
+            lat_lon = f"{segment[1]}_{segment[0]}"
+            if lat_lon in line_stations:
+                locations.append(line_stations[lat_lon])
+            else:
+                locations.append(Location(lat=segment[0], lon=segment[1]))
+        routes.append(Route(locations=locations))
+
+    json_path = Path("locations", f"{line.value}_locations.json")
+    output = [route.model_dump() for route in routes]
+    with open(json_path, "w") as json_file:
+        json.dump(output, json_file, indent=4)
