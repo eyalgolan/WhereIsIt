@@ -2,7 +2,7 @@ from decimal import Decimal
 from typing import Dict
 from unittest.mock import Mock, patch
 
-from whereisit.arrival_service.train_arrival_service import (
+from src.arrival_service.train_arrival_service import (
     RelativeTrainArrival,
     TrainArrivalFromAPI,
     TrainArrivalService,

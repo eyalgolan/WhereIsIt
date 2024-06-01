@@ -4,8 +4,8 @@ from typing import Dict, Optional
 import requests
 from pydantic import BaseModel
 
-from whereisit.arrival_service.vehicle_arrival_service import VehicleArrivalService
-from whereisit.shared_models import TubeLine
+from src.arrival_service.vehicle_arrival_service import VehicleArrivalService
+from src.shared_models import TubeLine
 
 
 class TrainArrivalFromAPI(BaseModel):

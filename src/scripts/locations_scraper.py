@@ -7,7 +7,7 @@ from typing import Dict, List
 
 import requests
 
-from whereisit.shared_models import Location, Route, Station, TubeLine
+from src.shared_models import Location, Route, Station, TubeLine
 
 for line in TubeLine:
     url = f"https://api.tfl.gov.uk/line/{line.value}/route/sequence/all"
