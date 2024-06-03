@@ -1,5 +1,5 @@
 from decimal import ROUND_HALF_DOWN, Decimal
-from typing import Dict, Optional
+from typing import Dict, List, Optional
 
 import requests
 from pydantic import BaseModel
@@ -125,12 +125,12 @@ class TrainArrivalService(VehicleArrivalService):
         for entry in entries_to_delete:
             self.relative_train_locations.pop(entry)
 
-    def get_arrivals(self) -> Dict[int, RelativeTrainArrival]:
+    def get_arrivals(self) -> List[RelativeTrainArrival]:
         train_locations = self._get_train_arrivals_from_api()
         self._update_all_relative_train_arrivals(train_locations)
         self._remove_obsolete_train_arrivals(train_locations)
 
-        return self.relative_train_locations
+        return list(self.relative_train_locations.values())
         # WIP for debugging purposes
         for key, value in self.relative_train_locations.items():
             print(f"{key}:{value.percent_traveled_to_station}")

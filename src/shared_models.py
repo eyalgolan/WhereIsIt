@@ -1,7 +1,7 @@
 from enum import Enum
-from typing import List, Union
+from typing import Dict, List, Literal, Union
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class TubeLine(Enum):
@@ -10,7 +10,7 @@ class TubeLine(Enum):
     BAKERLOO = "bakerloo"
     CENTRAL = "central"
     DISTRICT = "district"
-    ELIZABETH = "elizabeth line"
+    # ELIZABETH = "elizabeth line"
     HAMMERSMITH_AND_CITY = "hammersmith-city"
     JUBILEE = "jubilee"
     METROPOLITAN = "metropolitan"
@@ -20,15 +20,24 @@ class TubeLine(Enum):
     WATERLOO_AND_CITY = "waterloo-city"
 
 
-class Location(BaseModel):
+class Junction(BaseModel):
+    location_type: Literal["Location"]
     lon: float
     lat: float
 
 
-class Station(Location):
+class Station(BaseModel):
+    location_type: Literal["Station"]
     natpan_id: str
     name: str
+    lon: float
+    lat: float
+
+
+class RouteLocation(BaseModel):
+    location: Union[Junction, Station] = Field(discriminator="location_type")
 
 
 class Route(BaseModel):
-    locations: List[Union[Location, Station]] = []
+    line: str
+    locations: List[RouteLocation]

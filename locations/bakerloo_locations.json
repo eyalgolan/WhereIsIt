@@ -1,5 +1,6 @@
 [
     {
+        "line": "bakerloo",
         "locations": [
             {
                 "lon": 51.592268,
@@ -124,6 +125,7 @@
         ]
     },
     {
+        "line": "bakerloo",
         "locations": [
             {
                 "lon": 51.494536,

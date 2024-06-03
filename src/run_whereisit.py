@@ -1,6 +1,7 @@
 # This is currently a basic runner for debugging purposes.
 
 from arrival_service.train_arrival_service import TrainArrivalService
+from location_service.train_location_service import TrainLocationService
 
 
 def main():
@@ -9,7 +10,8 @@ def main():
     from time import sleep
 
     while True:
-        train_service.get_arrivals()
+        arrivals = train_service.get_arrivals()
+        TrainLocationService(train_arrivals=arrivals)
         sleep(15)
 
 

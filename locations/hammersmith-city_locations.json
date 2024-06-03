@@ -1,5 +1,6 @@
 [
     {
+        "line": "hammersmith-city",
         "locations": [
             {
                 "lon": 51.539321,
@@ -160,6 +161,7 @@
         ]
     },
     {
+        "line": "hammersmith-city",
         "locations": [
             {
                 "lon": 51.493535,

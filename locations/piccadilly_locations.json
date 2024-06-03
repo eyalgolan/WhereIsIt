@@ -1,5 +1,6 @@
 [
     {
+        "line": "piccadilly",
         "locations": [
             {
                 "lon": -0.149171,
@@ -250,6 +251,7 @@
         ]
     },
     {
+        "line": "piccadilly",
         "locations": [
             {
                 "lon": -0.477949,
@@ -500,6 +502,7 @@
         ]
     },
     {
+        "line": "piccadilly",
         "locations": [
             {
                 "lon": -0.149171,
@@ -722,6 +725,7 @@
         ]
     },
     {
+        "line": "piccadilly",
         "locations": [
             {
                 "lon": 51.470052,
@@ -944,6 +948,7 @@
         ]
     },
     {
+        "line": "piccadilly",
         "locations": [
             {
                 "lon": 51.458524,
@@ -1166,6 +1171,7 @@
         ]
     },
     {
+        "line": "piccadilly",
         "locations": [
             {
                 "lon": -0.149171,

@@ -1,5 +1,6 @@
 [
     {
+        "line": "central",
         "locations": [
             {
                 "lon": 0.113767,
@@ -208,6 +209,7 @@
         ]
     },
     {
+        "line": "central",
         "locations": [
             {
                 "lon": 51.569688,
@@ -416,6 +418,7 @@
         ]
     },
     {
+        "line": "central",
         "locations": [
             {
                 "lon": 0.093482,
@@ -618,6 +621,7 @@
         ]
     },
     {
+        "line": "central",
         "locations": [
             {
                 "lon": 0.093482,
@@ -820,6 +824,7 @@
         ]
     },
     {
+        "line": "central",
         "locations": [
             {
                 "lon": 51.569688,
@@ -1022,6 +1027,7 @@
         ]
     },
     {
+        "line": "central",
         "locations": [
             {
                 "lon": 0.113767,
@@ -1204,6 +1210,7 @@
         ]
     },
     {
+        "line": "central",
         "locations": [
             {
                 "lon": 51.515017,
@@ -1386,6 +1393,7 @@
         ]
     },
     {
+        "line": "central",
         "locations": [
             {
                 "lon": 0.093482,
@@ -1562,6 +1570,7 @@
         ]
     },
     {
+        "line": "central",
         "locations": [
             {
                 "lon": 51.515017,
@@ -1738,6 +1747,7 @@
         ]
     },
     {
+        "line": "central",
         "locations": [
             {
                 "lon": 0.03397,

@@ -1,5 +1,6 @@
 [
     {
+        "line": "waterloo-city",
         "locations": [
             {
                 "lon": 51.513552,
@@ -12,6 +13,7 @@
         ]
     },
     {
+        "line": "waterloo-city",
         "locations": [
             {
                 "lon": 51.503299,

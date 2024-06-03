@@ -1,5 +1,6 @@
 [
     {
+        "line": "district",
         "locations": [
             {
                 "lon": 51.559063,
@@ -242,6 +243,7 @@
         ]
     },
     {
+        "line": "district",
         "locations": [
             {
                 "lon": 51.515017,
@@ -484,6 +486,7 @@
         ]
     },
     {
+        "line": "district",
         "locations": [
             {
                 "lon": 51.559063,
@@ -716,6 +719,7 @@
         ]
     },
     {
+        "line": "district",
         "locations": [
             {
                 "lon": 51.463237,
@@ -948,6 +952,7 @@
         ]
     },
     {
+        "line": "district",
         "locations": [
             {
                 "lon": 51.559063,
@@ -1178,6 +1183,7 @@
         ]
     },
     {
+        "line": "district",
         "locations": [
             {
                 "lon": 51.421207,
@@ -1408,6 +1414,7 @@
         ]
     },
     {
+        "line": "district",
         "locations": [
             {
                 "lon": 51.497624,
@@ -1598,6 +1605,7 @@
         ]
     },
     {
+        "line": "district",
         "locations": [
             {
                 "lon": -0.167832,
@@ -1692,6 +1700,7 @@
         ]
     },
     {
+        "line": "district",
         "locations": [
             {
                 "lon": -0.167832,
@@ -1776,6 +1785,7 @@
         ]
     },
     {
+        "line": "district",
         "locations": [
             {
                 "lon": 51.463237,
@@ -1860,6 +1870,7 @@
         ]
     },
     {
+        "line": "district",
         "locations": [
             {
                 "lon": -0.167832,
@@ -1942,6 +1953,7 @@
         ]
     },
     {
+        "line": "district",
         "locations": [
             {
                 "lon": 51.421207,
@@ -2024,6 +2036,7 @@
         ]
     },
     {
+        "line": "district",
         "locations": [
             {
                 "lon": -0.167832,
@@ -2066,6 +2079,7 @@
         ]
     },
     {
+        "line": "district",
         "locations": [
             {
                 "lon": 51.497624,

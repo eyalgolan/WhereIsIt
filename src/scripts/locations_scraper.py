@@ -39,7 +39,7 @@ for line in TubeLine:
                 locations.append(line_stations[lat_lon])
             else:
                 locations.append(Location(lat=segment[0], lon=segment[1]))
-        routes.append(Route(locations=locations))
+        routes.append(Route(line=line.value, locations=locations))
 
     json_path = Path("locations", f"{line.value}_locations.json")
     output = [route.model_dump() for route in routes]
