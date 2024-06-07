@@ -8,7 +8,7 @@ from typing import List
 
 from src.arrival_service.train_arrival_service import RelativeTrainArrival
 from src.location_service.vehicle_location_service import LocationService
-from src.shared_models import Route, TubeLine
+from src.shared_models import Route, RouteLocation, TubeLine
 
 
 class TrainLocationService(LocationService):
@@ -21,7 +21,14 @@ class TrainLocationService(LocationService):
             json_path = Path("locations", f"{line.value}_locations.json")
             with open(json_path, "r") as json_file:
                 data = json.load(json_file)
-                self.routes.append(Route.route_factory(data))
+                for data_route in data:
+                    print(data_route)
+                    locations = data_route.get("locations")
+                    route = Route(
+                        line=data_route.get("line"),
+                        locations=[RouteLocation(**location) for location in locations],
+                    )
+                self.routes.append(route)
         print(self.routes)
 
     def __init__(self, train_arrivals):

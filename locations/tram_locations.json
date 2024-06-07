@@ -3,166 +3,253 @@
         "line": "tram",
         "locations": [
             {
-                "lon": 51.421051,
-                "lat": -0.205816
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.421051,
+                    "lat": -0.205816
+                }
             },
             {
-                "lon": -0.207679,
-                "lat": 51.417555,
-                "natpan_id": "940GZZCRDDR",
-                "name": "Dundonald Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRDDR",
+                    "name": "Dundonald Road Tram Stop",
+                    "lon": -0.207679,
+                    "lat": 51.417555
+                }
             },
             {
-                "lon": -0.201219,
-                "lat": 51.413589,
-                "natpan_id": "940GZZCRMTP",
-                "name": "Merton Park Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRMTP",
+                    "name": "Merton Park Tram Stop",
+                    "lon": -0.201219,
+                    "lat": 51.413589
+                }
             },
             {
-                "lon": -0.192834,
-                "lat": 51.408874,
-                "natpan_id": "940GZZCRMDN",
-                "name": "Morden Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRMDN",
+                    "name": "Morden Road Tram Stop",
+                    "lon": -0.192834,
+                    "lat": 51.408874
+                }
             },
             {
-                "lon": -0.182249,
-                "lat": 51.40423,
-                "natpan_id": "940GZZCRPHI",
-                "name": "Phipps Bridge Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRPHI",
+                    "name": "Phipps Bridge Tram Stop",
+                    "lon": -0.182249,
+                    "lat": 51.40423
+                }
             },
             {
-                "lon": -0.177743,
-                "lat": 51.401103,
-                "natpan_id": "940GZZCRBGV",
-                "name": "Belgrave Walk Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBGV",
+                    "name": "Belgrave Walk Tram Stop",
+                    "lon": -0.177806,
+                    "lat": 51.40133
+                }
             },
             {
-                "lon": -0.1709,
-                "lat": 51.39749,
-                "natpan_id": "940GZZCRMCH",
-                "name": "Mitcham Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRMCH",
+                    "name": "Mitcham Tram Stop",
+                    "lon": -0.1709,
+                    "lat": 51.39749
+                }
             },
             {
-                "lon": 51.392868,
-                "lat": -0.158263
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.392868,
+                    "lat": -0.158263
+                }
             },
             {
-                "lon": -0.142167,
-                "lat": 51.389242,
-                "natpan_id": "940GZZCRBED",
-                "name": "Beddington Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBED",
+                    "name": "Beddington Lane Tram Stop",
+                    "lon": -0.142167,
+                    "lat": 51.389242
+                }
             },
             {
-                "lon": -0.129045,
-                "lat": 51.385697,
-                "natpan_id": "940GZZCRTPA",
-                "name": "Therapia Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRTPA",
+                    "name": "Therapia Lane Tram Stop",
+                    "lon": -0.129045,
+                    "lat": 51.385697
+                }
             },
             {
-                "lon": -0.123855,
-                "lat": 51.382222,
-                "natpan_id": "940GZZCRAMP",
-                "name": "Ampere Way Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRAMP",
+                    "name": "Ampere Way Tram Stop",
+                    "lon": -0.123442,
+                    "lat": 51.382143
+                }
             },
             {
-                "lon": -0.118016,
-                "lat": 51.377076,
-                "natpan_id": "940GZZCRWAD",
-                "name": "Waddon Marsh Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWAD",
+                    "name": "Waddon Marsh Tram Stop",
+                    "lon": -0.118016,
+                    "lat": 51.377076
+                }
             },
             {
-                "lon": -0.113282,
-                "lat": 51.373403,
-                "natpan_id": "940GZZCRWAN",
-                "name": "Wandle Park Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWAN",
+                    "name": "Wandle Park Tram Stop",
+                    "lon": -0.113282,
+                    "lat": 51.373403
+                }
             },
             {
-                "lon": -0.106408,
-                "lat": 51.375279,
-                "natpan_id": "940GZZCRRVC",
-                "name": "Reeves Corner Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRRVC",
+                    "name": "Reeves Corner Tram Stop",
+                    "lon": -0.106408,
+                    "lat": 51.375279
+                }
             },
             {
-                "lon": -0.103917,
-                "lat": 51.375769,
-                "natpan_id": "940GZZCRCTR",
-                "name": "Centrale Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRCTR",
+                    "name": "Centrale Tram Stop",
+                    "lon": -0.103917,
+                    "lat": 51.375769
+                }
             },
             {
-                "lon": 51.378971,
-                "lat": -0.101701
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.378971,
+                    "lat": -0.101701
+                }
             },
             {
-                "lon": -0.097554,
-                "lat": 51.37537,
-                "natpan_id": "940GZZCRWEL",
-                "name": "Wellesley Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWEL",
+                    "name": "Wellesley Road Tram Stop",
+                    "lon": -0.097554,
+                    "lat": 51.37537
+                }
             },
             {
-                "lon": 51.374863,
-                "lat": -0.092416
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.374863,
+                    "lat": -0.092416
+                }
             },
             {
-                "lon": -0.085002,
-                "lat": 51.375201,
-                "natpan_id": "940GZZCRLEB",
-                "name": "Lebanon Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRLEB",
+                    "name": "Lebanon Road Tram Stop",
+                    "lon": -0.085002,
+                    "lat": 51.375201
+                }
             },
             {
-                "lon": -0.078041,
-                "lat": 51.375024,
-                "natpan_id": "940GZZCRSAN",
-                "name": "Sandilands Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRSAN",
+                    "name": "Sandilands Tram Stop",
+                    "lon": -0.078041,
+                    "lat": 51.375024
+                }
             },
             {
-                "lon": -0.073242,
-                "lat": 51.37981,
-                "natpan_id": "940GZZCRADD",
-                "name": "Addiscombe Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRADD",
+                    "name": "Addiscombe Tram Stop",
+                    "lon": -0.073242,
+                    "lat": 51.37981
+                }
             },
             {
-                "lon": -0.070562,
-                "lat": 51.384757,
-                "natpan_id": "940GZZCRBLA",
-                "name": "Blackhorse Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBLA",
+                    "name": "Blackhorse Lane Tram Stop",
+                    "lon": -0.070562,
+                    "lat": 51.384757
+                }
             },
             {
-                "lon": -0.065361,
-                "lat": 51.3871,
-                "natpan_id": "940GZZCRWOD",
-                "name": "Woodside Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWOD",
+                    "name": "Woodside Tram Stop",
+                    "lon": -0.065361,
+                    "lat": 51.3871
+                }
             },
             {
-                "lon": -0.058347,
-                "lat": 51.391525,
-                "natpan_id": "940GZZCRARA",
-                "name": "Arena Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRARA",
+                    "name": "Arena Tram Stop",
+                    "lon": -0.058347,
+                    "lat": 51.391525
+                }
             },
             {
-                "lon": -0.060729,
-                "lat": 51.399793,
-                "natpan_id": "940GZZCRHAR",
-                "name": "Harrington Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRHAR",
+                    "name": "Harrington Road Tram Stop",
+                    "lon": -0.060729,
+                    "lat": 51.399793
+                }
             },
             {
-                "lon": 51.403767,
-                "lat": -0.055787
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.403767,
+                    "lat": -0.055787
+                }
             },
             {
-                "lon": -0.049476,
-                "lat": 51.4068,
-                "natpan_id": "940GZZCRAVE",
-                "name": "Avenue Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRAVE",
+                    "name": "Avenue Road Tram Stop",
+                    "lon": -0.049476,
+                    "lat": 51.4068
+                }
             },
             {
-                "lon": -0.043421,
-                "lat": 51.409532,
-                "natpan_id": "940GZZCRBRD",
-                "name": "Beckenham Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBRD",
+                    "name": "Beckenham Road Tram Stop",
+                    "lon": -0.043421,
+                    "lat": 51.409532
+                }
             },
             {
-                "lon": 51.41073,
-                "lat": -0.026401
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.41073,
+                    "lat": -0.026401
+                }
             }
         ]
     },
@@ -170,156 +257,237 @@
         "line": "tram",
         "locations": [
             {
-                "lon": 51.41073,
-                "lat": -0.026401
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.41073,
+                    "lat": -0.026401
+                }
             },
             {
-                "lon": -0.043421,
-                "lat": 51.409532,
-                "natpan_id": "940GZZCRBRD",
-                "name": "Beckenham Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBRD",
+                    "name": "Beckenham Road Tram Stop",
+                    "lon": -0.043421,
+                    "lat": 51.409532
+                }
             },
             {
-                "lon": -0.049476,
-                "lat": 51.4068,
-                "natpan_id": "940GZZCRAVE",
-                "name": "Avenue Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRAVE",
+                    "name": "Avenue Road Tram Stop",
+                    "lon": -0.049476,
+                    "lat": 51.4068
+                }
             },
             {
-                "lon": 51.403767,
-                "lat": -0.055787
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.403767,
+                    "lat": -0.055787
+                }
             },
             {
-                "lon": -0.060729,
-                "lat": 51.399793,
-                "natpan_id": "940GZZCRHAR",
-                "name": "Harrington Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRHAR",
+                    "name": "Harrington Road Tram Stop",
+                    "lon": -0.060729,
+                    "lat": 51.399793
+                }
             },
             {
-                "lon": -0.058347,
-                "lat": 51.391525,
-                "natpan_id": "940GZZCRARA",
-                "name": "Arena Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRARA",
+                    "name": "Arena Tram Stop",
+                    "lon": -0.058347,
+                    "lat": 51.391525
+                }
             },
             {
-                "lon": -0.065361,
-                "lat": 51.3871,
-                "natpan_id": "940GZZCRWOD",
-                "name": "Woodside Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWOD",
+                    "name": "Woodside Tram Stop",
+                    "lon": -0.065361,
+                    "lat": 51.3871
+                }
             },
             {
-                "lon": -0.070562,
-                "lat": 51.384757,
-                "natpan_id": "940GZZCRBLA",
-                "name": "Blackhorse Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBLA",
+                    "name": "Blackhorse Lane Tram Stop",
+                    "lon": -0.070562,
+                    "lat": 51.384757
+                }
             },
             {
-                "lon": -0.073242,
-                "lat": 51.37981,
-                "natpan_id": "940GZZCRADD",
-                "name": "Addiscombe Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRADD",
+                    "name": "Addiscombe Tram Stop",
+                    "lon": -0.073242,
+                    "lat": 51.37981
+                }
             },
             {
-                "lon": -0.078041,
-                "lat": 51.375024,
-                "natpan_id": "940GZZCRSAN",
-                "name": "Sandilands Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRSAN",
+                    "name": "Sandilands Tram Stop",
+                    "lon": -0.078041,
+                    "lat": 51.375024
+                }
             },
             {
-                "lon": -0.085002,
-                "lat": 51.375201,
-                "natpan_id": "940GZZCRLEB",
-                "name": "Lebanon Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRLEB",
+                    "name": "Lebanon Road Tram Stop",
+                    "lon": -0.085002,
+                    "lat": 51.375201
+                }
             },
             {
-                "lon": 51.374863,
-                "lat": -0.092416
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.374863,
+                    "lat": -0.092416
+                }
             },
             {
-                "lon": -0.098746,
-                "lat": 51.373977,
-                "natpan_id": "940GZZCRCEN",
-                "name": "George Street Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRCEN",
+                    "name": "George Street Tram Stop",
+                    "lon": -0.098746,
+                    "lat": 51.373977
+                }
             },
             {
-                "lon": -0.104361,
-                "lat": 51.373708,
-                "natpan_id": "940GZZCRCHR",
-                "name": "Church Street Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRCHR",
+                    "name": "Church Street Tram Stop",
+                    "lon": -0.104361,
+                    "lat": 51.373708
+                }
             },
             {
-                "lon": -0.113282,
-                "lat": 51.373403,
-                "natpan_id": "940GZZCRWAN",
-                "name": "Wandle Park Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWAN",
+                    "name": "Wandle Park Tram Stop",
+                    "lon": -0.113282,
+                    "lat": 51.373403
+                }
             },
             {
-                "lon": -0.118016,
-                "lat": 51.377076,
-                "natpan_id": "940GZZCRWAD",
-                "name": "Waddon Marsh Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWAD",
+                    "name": "Waddon Marsh Tram Stop",
+                    "lon": -0.118016,
+                    "lat": 51.377076
+                }
             },
             {
-                "lon": -0.123855,
-                "lat": 51.382222,
-                "natpan_id": "940GZZCRAMP",
-                "name": "Ampere Way Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRAMP",
+                    "name": "Ampere Way Tram Stop",
+                    "lon": -0.123442,
+                    "lat": 51.382143
+                }
             },
             {
-                "lon": -0.129045,
-                "lat": 51.385697,
-                "natpan_id": "940GZZCRTPA",
-                "name": "Therapia Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRTPA",
+                    "name": "Therapia Lane Tram Stop",
+                    "lon": -0.129045,
+                    "lat": 51.385697
+                }
             },
             {
-                "lon": -0.142167,
-                "lat": 51.389242,
-                "natpan_id": "940GZZCRBED",
-                "name": "Beddington Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBED",
+                    "name": "Beddington Lane Tram Stop",
+                    "lon": -0.142167,
+                    "lat": 51.389242
+                }
             },
             {
-                "lon": 51.392868,
-                "lat": -0.158263
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.392868,
+                    "lat": -0.158263
+                }
             },
             {
-                "lon": -0.1709,
-                "lat": 51.39749,
-                "natpan_id": "940GZZCRMCH",
-                "name": "Mitcham Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRMCH",
+                    "name": "Mitcham Tram Stop",
+                    "lon": -0.1709,
+                    "lat": 51.39749
+                }
             },
             {
-                "lon": -0.177743,
-                "lat": 51.401103,
-                "natpan_id": "940GZZCRBGV",
-                "name": "Belgrave Walk Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBGV",
+                    "name": "Belgrave Walk Tram Stop",
+                    "lon": -0.177806,
+                    "lat": 51.40133
+                }
             },
             {
-                "lon": -0.182249,
-                "lat": 51.40423,
-                "natpan_id": "940GZZCRPHI",
-                "name": "Phipps Bridge Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRPHI",
+                    "name": "Phipps Bridge Tram Stop",
+                    "lon": -0.182249,
+                    "lat": 51.40423
+                }
             },
             {
-                "lon": -0.192834,
-                "lat": 51.408874,
-                "natpan_id": "940GZZCRMDN",
-                "name": "Morden Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRMDN",
+                    "name": "Morden Road Tram Stop",
+                    "lon": -0.192834,
+                    "lat": 51.408874
+                }
             },
             {
-                "lon": -0.201219,
-                "lat": 51.413589,
-                "natpan_id": "940GZZCRMTP",
-                "name": "Merton Park Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRMTP",
+                    "name": "Merton Park Tram Stop",
+                    "lon": -0.201219,
+                    "lat": 51.413589
+                }
             },
             {
-                "lon": -0.207679,
-                "lat": 51.417555,
-                "natpan_id": "940GZZCRDDR",
-                "name": "Dundonald Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRDDR",
+                    "name": "Dundonald Road Tram Stop",
+                    "lon": -0.207679,
+                    "lat": 51.417555
+                }
             },
             {
-                "lon": 51.421051,
-                "lat": -0.205816
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.421051,
+                    "lat": -0.205816
+                }
             }
         ]
     },
@@ -327,144 +495,219 @@
         "line": "tram",
         "locations": [
             {
-                "lon": 51.421051,
-                "lat": -0.205816
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.421051,
+                    "lat": -0.205816
+                }
             },
             {
-                "lon": -0.207679,
-                "lat": 51.417555,
-                "natpan_id": "940GZZCRDDR",
-                "name": "Dundonald Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRDDR",
+                    "name": "Dundonald Road Tram Stop",
+                    "lon": -0.207679,
+                    "lat": 51.417555
+                }
             },
             {
-                "lon": -0.201219,
-                "lat": 51.413589,
-                "natpan_id": "940GZZCRMTP",
-                "name": "Merton Park Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRMTP",
+                    "name": "Merton Park Tram Stop",
+                    "lon": -0.201219,
+                    "lat": 51.413589
+                }
             },
             {
-                "lon": -0.192834,
-                "lat": 51.408874,
-                "natpan_id": "940GZZCRMDN",
-                "name": "Morden Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRMDN",
+                    "name": "Morden Road Tram Stop",
+                    "lon": -0.192834,
+                    "lat": 51.408874
+                }
             },
             {
-                "lon": -0.182249,
-                "lat": 51.40423,
-                "natpan_id": "940GZZCRPHI",
-                "name": "Phipps Bridge Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRPHI",
+                    "name": "Phipps Bridge Tram Stop",
+                    "lon": -0.182249,
+                    "lat": 51.40423
+                }
             },
             {
-                "lon": -0.177743,
-                "lat": 51.401103,
-                "natpan_id": "940GZZCRBGV",
-                "name": "Belgrave Walk Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBGV",
+                    "name": "Belgrave Walk Tram Stop",
+                    "lon": -0.177806,
+                    "lat": 51.40133
+                }
             },
             {
-                "lon": -0.1709,
-                "lat": 51.39749,
-                "natpan_id": "940GZZCRMCH",
-                "name": "Mitcham Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRMCH",
+                    "name": "Mitcham Tram Stop",
+                    "lon": -0.1709,
+                    "lat": 51.39749
+                }
             },
             {
-                "lon": 51.392868,
-                "lat": -0.158263
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.392868,
+                    "lat": -0.158263
+                }
             },
             {
-                "lon": -0.142167,
-                "lat": 51.389242,
-                "natpan_id": "940GZZCRBED",
-                "name": "Beddington Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBED",
+                    "name": "Beddington Lane Tram Stop",
+                    "lon": -0.142167,
+                    "lat": 51.389242
+                }
             },
             {
-                "lon": -0.129045,
-                "lat": 51.385697,
-                "natpan_id": "940GZZCRTPA",
-                "name": "Therapia Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRTPA",
+                    "name": "Therapia Lane Tram Stop",
+                    "lon": -0.129045,
+                    "lat": 51.385697
+                }
             },
             {
-                "lon": -0.123855,
-                "lat": 51.382222,
-                "natpan_id": "940GZZCRAMP",
-                "name": "Ampere Way Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRAMP",
+                    "name": "Ampere Way Tram Stop",
+                    "lon": -0.123442,
+                    "lat": 51.382143
+                }
             },
             {
-                "lon": -0.118016,
-                "lat": 51.377076,
-                "natpan_id": "940GZZCRWAD",
-                "name": "Waddon Marsh Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWAD",
+                    "name": "Waddon Marsh Tram Stop",
+                    "lon": -0.118016,
+                    "lat": 51.377076
+                }
             },
             {
-                "lon": -0.113282,
-                "lat": 51.373403,
-                "natpan_id": "940GZZCRWAN",
-                "name": "Wandle Park Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWAN",
+                    "name": "Wandle Park Tram Stop",
+                    "lon": -0.113282,
+                    "lat": 51.373403
+                }
             },
             {
-                "lon": -0.106408,
-                "lat": 51.375279,
-                "natpan_id": "940GZZCRRVC",
-                "name": "Reeves Corner Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRRVC",
+                    "name": "Reeves Corner Tram Stop",
+                    "lon": -0.106408,
+                    "lat": 51.375279
+                }
             },
             {
-                "lon": -0.103917,
-                "lat": 51.375769,
-                "natpan_id": "940GZZCRCTR",
-                "name": "Centrale Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRCTR",
+                    "name": "Centrale Tram Stop",
+                    "lon": -0.103917,
+                    "lat": 51.375769
+                }
             },
             {
-                "lon": 51.378971,
-                "lat": -0.101701
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.378971,
+                    "lat": -0.101701
+                }
             },
             {
-                "lon": -0.097554,
-                "lat": 51.37537,
-                "natpan_id": "940GZZCRWEL",
-                "name": "Wellesley Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWEL",
+                    "name": "Wellesley Road Tram Stop",
+                    "lon": -0.097554,
+                    "lat": 51.37537
+                }
             },
             {
-                "lon": 51.374863,
-                "lat": -0.092416
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.374863,
+                    "lat": -0.092416
+                }
             },
             {
-                "lon": -0.085002,
-                "lat": 51.375201,
-                "natpan_id": "940GZZCRLEB",
-                "name": "Lebanon Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRLEB",
+                    "name": "Lebanon Road Tram Stop",
+                    "lon": -0.085002,
+                    "lat": 51.375201
+                }
             },
             {
-                "lon": -0.078041,
-                "lat": 51.375024,
-                "natpan_id": "940GZZCRSAN",
-                "name": "Sandilands Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRSAN",
+                    "name": "Sandilands Tram Stop",
+                    "lon": -0.078041,
+                    "lat": 51.375024
+                }
             },
             {
-                "lon": -0.073242,
-                "lat": 51.37981,
-                "natpan_id": "940GZZCRADD",
-                "name": "Addiscombe Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRADD",
+                    "name": "Addiscombe Tram Stop",
+                    "lon": -0.073242,
+                    "lat": 51.37981
+                }
             },
             {
-                "lon": -0.070562,
-                "lat": 51.384757,
-                "natpan_id": "940GZZCRBLA",
-                "name": "Blackhorse Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBLA",
+                    "name": "Blackhorse Lane Tram Stop",
+                    "lon": -0.070562,
+                    "lat": 51.384757
+                }
             },
             {
-                "lon": -0.065361,
-                "lat": 51.3871,
-                "natpan_id": "940GZZCRWOD",
-                "name": "Woodside Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWOD",
+                    "name": "Woodside Tram Stop",
+                    "lon": -0.065361,
+                    "lat": 51.3871
+                }
             },
             {
-                "lon": -0.058347,
-                "lat": 51.391525,
-                "natpan_id": "940GZZCRARA",
-                "name": "Arena Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRARA",
+                    "name": "Arena Tram Stop",
+                    "lon": -0.058347,
+                    "lat": 51.391525
+                }
             },
             {
-                "lon": 51.398474,
-                "lat": -0.049557
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.398474,
+                    "lat": -0.049557
+                }
             }
         ]
     },
@@ -472,134 +715,203 @@
         "line": "tram",
         "locations": [
             {
-                "lon": 51.398474,
-                "lat": -0.049557
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.398474,
+                    "lat": -0.049557
+                }
             },
             {
-                "lon": -0.058347,
-                "lat": 51.391525,
-                "natpan_id": "940GZZCRARA",
-                "name": "Arena Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRARA",
+                    "name": "Arena Tram Stop",
+                    "lon": -0.058347,
+                    "lat": 51.391525
+                }
             },
             {
-                "lon": -0.065361,
-                "lat": 51.3871,
-                "natpan_id": "940GZZCRWOD",
-                "name": "Woodside Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWOD",
+                    "name": "Woodside Tram Stop",
+                    "lon": -0.065361,
+                    "lat": 51.3871
+                }
             },
             {
-                "lon": -0.070562,
-                "lat": 51.384757,
-                "natpan_id": "940GZZCRBLA",
-                "name": "Blackhorse Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBLA",
+                    "name": "Blackhorse Lane Tram Stop",
+                    "lon": -0.070562,
+                    "lat": 51.384757
+                }
             },
             {
-                "lon": -0.073242,
-                "lat": 51.37981,
-                "natpan_id": "940GZZCRADD",
-                "name": "Addiscombe Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRADD",
+                    "name": "Addiscombe Tram Stop",
+                    "lon": -0.073242,
+                    "lat": 51.37981
+                }
             },
             {
-                "lon": -0.078041,
-                "lat": 51.375024,
-                "natpan_id": "940GZZCRSAN",
-                "name": "Sandilands Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRSAN",
+                    "name": "Sandilands Tram Stop",
+                    "lon": -0.078041,
+                    "lat": 51.375024
+                }
             },
             {
-                "lon": -0.085002,
-                "lat": 51.375201,
-                "natpan_id": "940GZZCRLEB",
-                "name": "Lebanon Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRLEB",
+                    "name": "Lebanon Road Tram Stop",
+                    "lon": -0.085002,
+                    "lat": 51.375201
+                }
             },
             {
-                "lon": 51.374863,
-                "lat": -0.092416
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.374863,
+                    "lat": -0.092416
+                }
             },
             {
-                "lon": -0.098746,
-                "lat": 51.373977,
-                "natpan_id": "940GZZCRCEN",
-                "name": "George Street Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRCEN",
+                    "name": "George Street Tram Stop",
+                    "lon": -0.098746,
+                    "lat": 51.373977
+                }
             },
             {
-                "lon": -0.104361,
-                "lat": 51.373708,
-                "natpan_id": "940GZZCRCHR",
-                "name": "Church Street Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRCHR",
+                    "name": "Church Street Tram Stop",
+                    "lon": -0.104361,
+                    "lat": 51.373708
+                }
             },
             {
-                "lon": -0.113282,
-                "lat": 51.373403,
-                "natpan_id": "940GZZCRWAN",
-                "name": "Wandle Park Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWAN",
+                    "name": "Wandle Park Tram Stop",
+                    "lon": -0.113282,
+                    "lat": 51.373403
+                }
             },
             {
-                "lon": -0.118016,
-                "lat": 51.377076,
-                "natpan_id": "940GZZCRWAD",
-                "name": "Waddon Marsh Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWAD",
+                    "name": "Waddon Marsh Tram Stop",
+                    "lon": -0.118016,
+                    "lat": 51.377076
+                }
             },
             {
-                "lon": -0.123855,
-                "lat": 51.382222,
-                "natpan_id": "940GZZCRAMP",
-                "name": "Ampere Way Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRAMP",
+                    "name": "Ampere Way Tram Stop",
+                    "lon": -0.123442,
+                    "lat": 51.382143
+                }
             },
             {
-                "lon": -0.129045,
-                "lat": 51.385697,
-                "natpan_id": "940GZZCRTPA",
-                "name": "Therapia Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRTPA",
+                    "name": "Therapia Lane Tram Stop",
+                    "lon": -0.129045,
+                    "lat": 51.385697
+                }
             },
             {
-                "lon": -0.142167,
-                "lat": 51.389242,
-                "natpan_id": "940GZZCRBED",
-                "name": "Beddington Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBED",
+                    "name": "Beddington Lane Tram Stop",
+                    "lon": -0.142167,
+                    "lat": 51.389242
+                }
             },
             {
-                "lon": 51.392868,
-                "lat": -0.158263
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.392868,
+                    "lat": -0.158263
+                }
             },
             {
-                "lon": -0.1709,
-                "lat": 51.39749,
-                "natpan_id": "940GZZCRMCH",
-                "name": "Mitcham Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRMCH",
+                    "name": "Mitcham Tram Stop",
+                    "lon": -0.1709,
+                    "lat": 51.39749
+                }
             },
             {
-                "lon": -0.177743,
-                "lat": 51.401103,
-                "natpan_id": "940GZZCRBGV",
-                "name": "Belgrave Walk Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRBGV",
+                    "name": "Belgrave Walk Tram Stop",
+                    "lon": -0.177806,
+                    "lat": 51.40133
+                }
             },
             {
-                "lon": -0.182249,
-                "lat": 51.40423,
-                "natpan_id": "940GZZCRPHI",
-                "name": "Phipps Bridge Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRPHI",
+                    "name": "Phipps Bridge Tram Stop",
+                    "lon": -0.182249,
+                    "lat": 51.40423
+                }
             },
             {
-                "lon": -0.192834,
-                "lat": 51.408874,
-                "natpan_id": "940GZZCRMDN",
-                "name": "Morden Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRMDN",
+                    "name": "Morden Road Tram Stop",
+                    "lon": -0.192834,
+                    "lat": 51.408874
+                }
             },
             {
-                "lon": -0.201219,
-                "lat": 51.413589,
-                "natpan_id": "940GZZCRMTP",
-                "name": "Merton Park Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRMTP",
+                    "name": "Merton Park Tram Stop",
+                    "lon": -0.201219,
+                    "lat": 51.413589
+                }
             },
             {
-                "lon": -0.207679,
-                "lat": 51.417555,
-                "natpan_id": "940GZZCRDDR",
-                "name": "Dundonald Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRDDR",
+                    "name": "Dundonald Road Tram Stop",
+                    "lon": -0.207679,
+                    "lat": 51.417555
+                }
             },
             {
-                "lon": 51.421051,
-                "lat": -0.205816
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.421051,
+                    "lat": -0.205816
+                }
             }
         ]
     },
@@ -607,84 +919,126 @@
         "line": "tram",
         "locations": [
             {
-                "lon": -0.104361,
-                "lat": 51.373708,
-                "natpan_id": "940GZZCRCHR",
-                "name": "Church Street Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRCHR",
+                    "name": "Church Street Tram Stop",
+                    "lon": -0.104361,
+                    "lat": 51.373708
+                }
             },
             {
-                "lon": -0.103917,
-                "lat": 51.375769,
-                "natpan_id": "940GZZCRCTR",
-                "name": "Centrale Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRCTR",
+                    "name": "Centrale Tram Stop",
+                    "lon": -0.103917,
+                    "lat": 51.375769
+                }
             },
             {
-                "lon": 51.378971,
-                "lat": -0.101701
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.378971,
+                    "lat": -0.101701
+                }
             },
             {
-                "lon": -0.097554,
-                "lat": 51.37537,
-                "natpan_id": "940GZZCRWEL",
-                "name": "Wellesley Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRWEL",
+                    "name": "Wellesley Road Tram Stop",
+                    "lon": -0.097554,
+                    "lat": 51.37537
+                }
             },
             {
-                "lon": 51.374863,
-                "lat": -0.092416
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.374863,
+                    "lat": -0.092416
+                }
             },
             {
-                "lon": -0.085002,
-                "lat": 51.375201,
-                "natpan_id": "940GZZCRLEB",
-                "name": "Lebanon Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRLEB",
+                    "name": "Lebanon Road Tram Stop",
+                    "lon": -0.085002,
+                    "lat": 51.375201
+                }
             },
             {
-                "lon": -0.078041,
-                "lat": 51.375024,
-                "natpan_id": "940GZZCRSAN",
-                "name": "Sandilands Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRSAN",
+                    "name": "Sandilands Tram Stop",
+                    "lon": -0.078041,
+                    "lat": 51.375024
+                }
             },
             {
-                "lon": -0.080775,
-                "lat": 51.364278,
-                "natpan_id": "940GZZCRLOY",
-                "name": "Lloyd Park Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRLOY",
+                    "name": "Lloyd Park Tram Stop",
+                    "lon": -0.080775,
+                    "lat": 51.364278
+                }
             },
             {
-                "lon": -0.05956,
-                "lat": 51.359791,
-                "natpan_id": "940GZZCRCOO",
-                "name": "Coombe Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRCOO",
+                    "name": "Coombe Lane Tram Stop",
+                    "lon": -0.05956,
+                    "lat": 51.359791
+                }
             },
             {
-                "lon": -0.04315,
-                "lat": 51.354545,
-                "natpan_id": "940GZZCRGRA",
-                "name": "Gravel Hill Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRGRA",
+                    "name": "Gravel Hill Tram Stop",
+                    "lon": -0.04315,
+                    "lat": 51.354545
+                }
             },
             {
-                "lon": -0.032694,
-                "lat": 51.356241,
-                "natpan_id": "940GZZCRADV",
-                "name": "Addington Village Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRADV",
+                    "name": "Addington Village Tram Stop",
+                    "lon": -0.032694,
+                    "lat": 51.356241
+                }
             },
             {
-                "lon": -0.024532,
-                "lat": 51.351319,
-                "natpan_id": "940GZZCRFLD",
-                "name": "Fieldway Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRFLD",
+                    "name": "Fieldway Tram Stop",
+                    "lon": -0.024532,
+                    "lat": 51.351319
+                }
             },
             {
-                "lon": -0.020849,
-                "lat": 51.346138,
-                "natpan_id": "940GZZCRKGH",
-                "name": "King Henry's Drive Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRKGH",
+                    "name": "King Henry's Drive Tram Stop",
+                    "lon": -0.019975,
+                    "lat": 51.345082
+                }
             },
             {
-                "lon": -0.017412,
-                "lat": 51.342593,
-                "natpan_id": "940GZZCRNWA",
-                "name": "New Addington Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRNWA",
+                    "name": "New Addington Tram Stop",
+                    "lon": -0.017412,
+                    "lat": 51.342593
+                }
             }
         ]
     },
@@ -692,74 +1046,110 @@
         "line": "tram",
         "locations": [
             {
-                "lon": -0.017412,
-                "lat": 51.342593,
-                "natpan_id": "940GZZCRNWA",
-                "name": "New Addington Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRNWA",
+                    "name": "New Addington Tram Stop",
+                    "lon": -0.017412,
+                    "lat": 51.342593
+                }
             },
             {
-                "lon": -0.020849,
-                "lat": 51.346138,
-                "natpan_id": "940GZZCRKGH",
-                "name": "King Henry's Drive Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRKGH",
+                    "name": "King Henry's Drive Tram Stop",
+                    "lon": -0.019975,
+                    "lat": 51.345082
+                }
             },
             {
-                "lon": -0.024532,
-                "lat": 51.351319,
-                "natpan_id": "940GZZCRFLD",
-                "name": "Fieldway Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRFLD",
+                    "name": "Fieldway Tram Stop",
+                    "lon": -0.024532,
+                    "lat": 51.351319
+                }
             },
             {
-                "lon": -0.032694,
-                "lat": 51.356241,
-                "natpan_id": "940GZZCRADV",
-                "name": "Addington Village Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRADV",
+                    "name": "Addington Village Tram Stop",
+                    "lon": -0.032694,
+                    "lat": 51.356241
+                }
             },
             {
-                "lon": -0.04315,
-                "lat": 51.354545,
-                "natpan_id": "940GZZCRGRA",
-                "name": "Gravel Hill Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRGRA",
+                    "name": "Gravel Hill Tram Stop",
+                    "lon": -0.04315,
+                    "lat": 51.354545
+                }
             },
             {
-                "lon": -0.05956,
-                "lat": 51.359791,
-                "natpan_id": "940GZZCRCOO",
-                "name": "Coombe Lane Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRCOO",
+                    "name": "Coombe Lane Tram Stop",
+                    "lon": -0.05956,
+                    "lat": 51.359791
+                }
             },
             {
-                "lon": -0.080775,
-                "lat": 51.364278,
-                "natpan_id": "940GZZCRLOY",
-                "name": "Lloyd Park Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRLOY",
+                    "name": "Lloyd Park Tram Stop",
+                    "lon": -0.080775,
+                    "lat": 51.364278
+                }
             },
             {
-                "lon": -0.078041,
-                "lat": 51.375024,
-                "natpan_id": "940GZZCRSAN",
-                "name": "Sandilands Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRSAN",
+                    "name": "Sandilands Tram Stop",
+                    "lon": -0.078041,
+                    "lat": 51.375024
+                }
             },
             {
-                "lon": -0.085002,
-                "lat": 51.375201,
-                "natpan_id": "940GZZCRLEB",
-                "name": "Lebanon Road Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRLEB",
+                    "name": "Lebanon Road Tram Stop",
+                    "lon": -0.085002,
+                    "lat": 51.375201
+                }
             },
             {
-                "lon": 51.374863,
-                "lat": -0.092416
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.374863,
+                    "lat": -0.092416
+                }
             },
             {
-                "lon": -0.098746,
-                "lat": 51.373977,
-                "natpan_id": "940GZZCRCEN",
-                "name": "George Street Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRCEN",
+                    "name": "George Street Tram Stop",
+                    "lon": -0.098746,
+                    "lat": 51.373977
+                }
             },
             {
-                "lon": -0.104361,
-                "lat": 51.373708,
-                "natpan_id": "940GZZCRCHR",
-                "name": "Church Street Tram Stop"
+                "location": {
+                    "location_type": "Station",
+                    "natpan_id": "940GZZCRCHR",
+                    "name": "Church Street Tram Stop",
+                    "lon": -0.104361,
+                    "lat": 51.373708
+                }
             }
         ]
     }

@@ -7,7 +7,7 @@ from typing import Dict, List
 
 import requests
 
-from src.shared_models import Location, Route, Station, TubeLine
+from src.shared_models import Junction, Route, RouteLocation, Station, TubeLine
 
 for line in TubeLine:
     url = f"https://api.tfl.gov.uk/line/{line.value}/route/sequence/all"
@@ -36,9 +36,11 @@ for line in TubeLine:
         for segment in line_string:
             lat_lon = f"{segment[1]}_{segment[0]}"
             if lat_lon in line_stations:
-                locations.append(line_stations[lat_lon])
+                locations.append(RouteLocation(location=line_stations[lat_lon]))
             else:
-                locations.append(Location(lat=segment[0], lon=segment[1]))
+                locations.append(
+                    RouteLocation(location=Junction(lat=segment[0], lon=segment[1]))
+                )
         routes.append(Route(line=line.value, locations=locations))
 
     json_path = Path("locations", f"{line.value}_locations.json")

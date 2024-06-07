@@ -3,12 +3,18 @@
         "line": "waterloo-city",
         "locations": [
             {
-                "lon": 51.513552,
-                "lat": -0.088919
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.513449,
+                    "lat": -0.090279
+                }
             },
             {
-                "lon": 51.503299,
-                "lat": -0.11478
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.503299,
+                    "lat": -0.11478
+                }
             }
         ]
     },
@@ -16,12 +22,18 @@
         "line": "waterloo-city",
         "locations": [
             {
-                "lon": 51.503299,
-                "lat": -0.11478
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.503299,
+                    "lat": -0.11478
+                }
             },
             {
-                "lon": 51.513552,
-                "lat": -0.088919
+                "location": {
+                    "location_type": "Junction",
+                    "lon": 51.513449,
+                    "lat": -0.090279
+                }
             }
         ]
     }

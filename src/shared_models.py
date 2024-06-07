@@ -21,13 +21,13 @@ class TubeLine(Enum):
 
 
 class Junction(BaseModel):
-    location_type: Literal["Location"]
+    location_type: Literal["Junction"] = "Junction"
     lon: float
     lat: float
 
 
 class Station(BaseModel):
-    location_type: Literal["Station"]
+    location_type: Literal["Station"] = "Station"
     natpan_id: str
     name: str
     lon: float
